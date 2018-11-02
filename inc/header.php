@@ -33,101 +33,89 @@ a
     </a>
         
     <div class="navbar-dropdown">
-    <a class="navbar-item">
     <a href="clientes/listar_clientes.php">
     Cad.Clientes
     </a><hr class="navbar-divider">
 
-    <a class="navbar-item">
-    <a href="clientes">
+    <a href="clientes/relatorio_clientes.php">
     Rel.Clientes
-    </a>
-    </div>
-    </div>
+    </a></div></div>
     
                             <div class="navbar-item has-dropdown is-hoverable">
                             <a class="navbar-link">
                             Bancos
                             </a>
                                 
-                            <div class="navbar-dropdown">
-                            <a class="navbar-item">
+                            <div class="navbar-dropdown">                                
                             <a href="bancos">
-                            Cad.Bancos
+                            XXXX
                             </a><hr class="navbar-divider">
-                            
-                            <a class="navbar-item">
+                                                                                            
                             <a href="bancos">
-                            Rel.Bancos
-                            </a>
-                            </div>
-                            </div>
+                            XXXX
+                            </a></div></div>
                     
                                                             <div class="navbar-item has-dropdown is-hoverable">
                                                             <a class="navbar-link">
                                                             Conta Bancaria
                                                             </a>
                                                                 
-                                                            <div class="navbar-dropdown">
-                                                            <a class="navbar-item">
+                                                            <div class="navbar-dropdown">                                                           
                                                             <a href="bancaria">
-                                                            Cad.Conta Bancaria
+                                                            XXXX
                                                             </a><hr class="navbar-divider">
                                                             
-                                                            <a class="navbar-item">
-                                                            <a href="frota">
-                                                            Rel.Contas
-                                                            </a>
-                                                            </div>
-                                                            </div>
+                                                            <a href="bancaria">
+                                                            XXXX
+                                                            </a></div></div>
 
                                                                     <div class="navbar-item has-dropdown is-hoverable">
                                                                     <a class="navbar-link">
-                                                                    Utilitarios
+                                                                    XXXX
                                                                     </a>
 
                                                                     <div class="navbar-dropdown">
                                                                     <a class="navbar-item">
                                                                     <a href="utilitarios">
-                                                                    Imp. XML CTe</a><hr class="navbar-divider">
+                                                                    XXXX</a><hr class="navbar-divider">
                                                                     
                                                                     <a class="navbar-item">
                                                                     <a href="utilitarios">
-                                                                    Geração de XML / EDI para CTe
+                                                                    XXXX
                                                                     </a><hr class="navbar-divider">
                                                                         
                                                                     <a class="navbar-item">
                                                                     <a href="utilitarios">
-                                                                    Geração de Arquivos EDI
+                                                                    XXXX
                                                                     </a>                                                                                            
                                                                     </div>
                                                                     </div>
                                                                         
                                                                             <div class="navbar-item has-dropdown is-hoverable">
                                                                             <a class="navbar-link">
-                                                                            Configurações
+                                                                            XXXX
                                                                             </a>
                                                                             <div class="navbar-dropdown">
                                                                             <a class="navbar-item">
                                                                             <a href="configuracoes">
-                                                                            Controle de Acesso
+                                                                            XXXX
                                                                             </a><hr class="navbar-divider">
 
                                                                             <a class="navbar-item">
                                                                             <a href="configuracoes">
-                                                                            Trocar usuario
+                                                                            XXXX
                                                                             </a>                                                                                                            
                                                                             </div>
                                                                             </div>
 
 <div class="navbar-item has-dropdown is-hoverable">
 <a class="navbar-link">
-Sobre
+XXXX
 </a>
 <div class="navbar-dropdown">
 <a class="navbar-item">
 <a href="sobre"></a>
-Informações do Sistema
+XXXX
 </a>                                                                                                                            
 </div>
 </div>

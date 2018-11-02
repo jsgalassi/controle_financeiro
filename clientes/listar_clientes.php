@@ -3,10 +3,10 @@
 <?php include_once '../conex/conexao.php';?>
 
 <br>
-<h3>Cad. Clientes</h3>
+<h4 class="title is-4">Cad. Clientes</h4>
 <hr>
 <div class="container">
-    <a href="form_veiculos.php" class="button is-primary">Incluir</a>
+    <a href="form_clientes.php" class="button is-primary">Incluir</a>
 </div>
 <br>
 <div class="container">
@@ -28,11 +28,11 @@ while ($row = $rows->fetch (PDO::FETCH_ASSOC))
 {
 echo 
 "<tr>
-	<td><h5>$row[CODCLIENTE]</h5></td>
-	<td><h5>$row[NOME]</h5></td>
-	<td><h5>$row[CPF]</h5></td>			
-    <td><h5><a href='form_clientes_edit.php?codcliente=$row[CODCLIENTE]'>Editar</a> - 
-			<a href='delete.php?codcliente=$row[CODCLIENTE]'>Excluir</a></h5></td>
+	<td><h5>$row[codcliente]</h5></td>
+	<td><h5>$row[nomecliente]</h5></td>
+	<td><h5>$row[cpf]</h5></td>			
+    <td><h5><a href='form_clientes_edit.php?codcliente=$row[codcliente]'>Editar</a> - 
+			<a href='delete.php?codcliente=$row[codcliente]'>Excluir</a></h5></td>
 			</tr>";
 }
 ?>

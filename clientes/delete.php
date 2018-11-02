@@ -2,15 +2,15 @@
 
 try 
 {
-	$CODCLIENTE = isset($_GET['CODCLIENTE']) ? $_GET['CODCLIENTE'] : null;
-	if (empty($CODCLIENTE)) {
+	$codcliente = isset($_GET['codcliente']) ? $_GET['codcliente'] : null;
+	if (empty($codcliente)) {
 		echo "Codigo Cliente não Informado";
 		exit;
 	}
 	$sql = $PDO->prepare("DELETE FROM CLIENTE
 			WHERE 
-			CODCLIENTE = :CODCLIENTE");
-			$sql->bindParam(':CODCLIENTE', $CODCLIENTE);		
+			codcliente = :codcliente");
+			$sql->bindParam(':codcliente', $codcliente);		
 			$sql->execute();
 	header("location: listar_clientes.php");
 }

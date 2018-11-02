@@ -4,7 +4,7 @@
 define( 'MYSQL_HOST', 'localhost' );
 define( 'MYSQL_USER', 'root' );
 define( 'MYSQL_PASSWORD', '' );
-define( 'MYSQL_DB_NAME', 'cfinanceiro' );
+define( 'MYSQL_DB_NAME', 'controle_financeiro' );
 
 try
 {
