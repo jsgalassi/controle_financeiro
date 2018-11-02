@@ -1,6 +1,6 @@
-<link href="../css/bulma.css" rel="stylesheet">
-<?php include_once '../inc/header.php'; ?>
-<?php include_once '../conex/conexao.php';?>
+<link href="css/bulma.css" rel="stylesheet">
+<?php include_once 'inc/header.php'; ?>
+<?php include_once 'conex/conexao.php';?>
 
 <?php
 $nomecliente = strtoupper($_POST['nomecliente']);
@@ -31,4 +31,4 @@ if ( ! $result )
 <script language="JavaScript"> 
 window.location="listar_clientes.php"; 
 </script> 
-<?php include_once '../inc/footer.php'; ?>
+<?php include_once 'inc/footer.php'; ?>

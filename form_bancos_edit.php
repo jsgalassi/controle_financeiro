@@ -1,8 +1,8 @@
-<link href="../css/bulma.css" rel="stylesheet">
-<?php include_once '../inc/header.php'; ?>
-<?php include_once '../conex/conexao.php';?>
-<script language="javascript" src="../js/jquery-3.2.1.min.js.js"></script>
-<script language="javascript" src="../js/jquery.mask.min.js"></script>
+<link href="css/bulma.css" rel="stylesheet">
+<?php include_once 'inc/header.php'; ?>
+<?php include_once 'conex/conexao.php';?>
+<script language="javascript" src="js/jquery-3.2.1.min.js.js"></script>
+<script language="javascript" src="js/jquery.mask.min.js"></script>
 <br>
 <h4 class="title is-4">Editar Clientes</h4>
 <hr>
@@ -13,7 +13,7 @@ $rows = $PDO->query("SELECT * FROM cliente where codcliente = '$codcliente'");
 $row = $rows->fetch (PDO::FETCH_ASSOC);
 ?>
 <!--Linha 14 envia dos dados alterados do formulario de edição para o arquivo edit.php via POST  -->
-<form action="edit.php" method="post">
+<form action="edit_clientes.php" method="post">
 <!--Linha 16 não sei pra que serve, mais se excluir essa merda não funciona o editar  -->
 <input type="hidden" class="form-control" name="codcliente" value="<?php echo $row['codcliente']?>" >
     
@@ -47,4 +47,4 @@ $row = $rows->fetch (PDO::FETCH_ASSOC);
 </center>
 </form>
 
-<?php include_once '../inc/footer.php'; ?>
+<?php include_once 'inc/footer.php'; ?>

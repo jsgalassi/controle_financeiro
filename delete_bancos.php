@@ -1,10 +1,10 @@
-<?php include_once '../conex/conexao.php';
+<?php include_once 'conex/conexao.php';
 
 try 
 {
 	$codcliente = isset($_GET['codcliente']) ? $_GET['codcliente'] : null;
 	if (empty($codcliente)) {
-		echo "Codigo Cliente não Informado";
+		echo "Cliente não encontrado";
 		exit;
 	}
 	$sql = $PDO->prepare("DELETE FROM CLIENTE

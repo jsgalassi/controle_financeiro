@@ -1,6 +1,6 @@
-<link href="../css/bulma.css" rel="stylesheet">
-<?php include_once '../inc/header.php'; ?>
-<?php include_once '../conex/conexao.php';?>
+<link href="css/bulma.css" rel="stylesheet">
+<?php include_once 'inc/header.php'; ?>
+<?php include_once 'conex/conexao.php';?>
 
 <br>
 <h4 class="title is-4">Cad. Clientes</h4>
@@ -32,11 +32,11 @@ echo
 	<td><h5>$row[nomecliente]</h5></td>
 	<td><h5>$row[cpf]</h5></td>			
     <td><h5><a href='form_clientes_edit.php?codcliente=$row[codcliente]'>Editar</a> - 
-			<a href='delete.php?codcliente=$row[codcliente]'>Excluir</a></h5></td>
+			<a href='delete_clientes.php?codcliente=$row[codcliente]'>Excluir</a></h5></td>
 			</tr>";
 }
 ?>
 </tbody>
 </table>
 </div>
-<?php include_once '../inc/footer.php'; ?>
+<?php include_once 'inc/footer.php'; ?>

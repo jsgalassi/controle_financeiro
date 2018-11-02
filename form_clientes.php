@@ -1,15 +1,15 @@
-<link href="../css/bulma.css" rel="stylesheet">
-<?php include_once '../inc/header.php'; ?>
-<?php include_once '../conex/conexao.php';?>
-<script language="javascript" src="../js/jquery-3.2.1.min.js.js"></script>
-<script language="javascript" src="../js/jquery.mask.min.js"></script>
-<script language="javascript" src="../js/bootstrap-notify.min"></script>
+<link href="css/bulma.css" rel="stylesheet">
+<?php include_once 'inc/header.php'; ?>
+<?php include_once 'conex/conexao.php';?>
+<script language="javascript" src="js/jquery-3.2.1.min.js.js"></script>
+<script language="javascript" src="js/jquery.mask.min.js"></script>
+<script language="javascript" src="js/bootstrap-notify.min"></script>
 
 <br>
 <h4 class="title is-4">Cad. Clientes</h4>
 <hr>
 
-<form action="insert.php" method="post">
+<form action="insert_clientes.php" method="post">
 
   <div class="field is-mobile">
   <div class="control">
@@ -38,4 +38,4 @@
 </center>
 </form>
 
-<?php include_once '../inc/footer.php'; ?>
+<?php include_once 'inc/footer.php'; ?>

@@ -33,11 +33,11 @@ a
     </a>
         
     <div class="navbar-dropdown">
-    <a href="clientes/listar_clientes.php">
+    <a href="listar_clientes.php">
     Cad.Clientes
     </a><hr class="navbar-divider">
 
-    <a href="clientes/relatorio_clientes.php">
+    <a href="relatorio_clientes.php">
     Rel.Clientes
     </a></div></div>
     
@@ -48,49 +48,42 @@ a
                                 
                             <div class="navbar-dropdown">                                
                             <a href="bancos">
-                            XXXX
+                            Cad.Banco
                             </a><hr class="navbar-divider">
                                                                                             
                             <a href="bancos">
-                            XXXX
+                            Rel.Bancos
                             </a></div></div>
                     
+                                            <div class="navbar-item has-dropdown is-hoverable">
+                                            <a class="navbar-link">
+                                            Conta Bancaria
+                                            </a>
+
+                                            <div class="navbar-dropdown">                                                           
+                                            <a href="bancaria">
+                                            Cad.Conta Bancaria
+                                            </a><hr class="navbar-divider">
+
+                                            <a href="bancaria">
+                                            Rel.Conta Bancaria
+                                            </a></div></div>
+
                                                             <div class="navbar-item has-dropdown is-hoverable">
                                                             <a class="navbar-link">
-                                                            Conta Bancaria
+                                                            Movimentações
                                                             </a>
-                                                                
-                                                            <div class="navbar-dropdown">                                                           
-                                                            <a href="bancaria">
-                                                            XXXX
+
+                                                            <div class="navbar-dropdown">
+                                                            <a class="navbar-item">
+                                                            <a href="movimentacao">
+                                                            Dig.Movimentação
                                                             </a><hr class="navbar-divider">
-                                                            
-                                                            <a href="bancaria">
-                                                            XXXX
+
+                                                            <a href="movimentacao">
+                                                            Rel.Movimentação
                                                             </a></div></div>
-
-                                                                    <div class="navbar-item has-dropdown is-hoverable">
-                                                                    <a class="navbar-link">
-                                                                    XXXX
-                                                                    </a>
-
-                                                                    <div class="navbar-dropdown">
-                                                                    <a class="navbar-item">
-                                                                    <a href="utilitarios">
-                                                                    XXXX</a><hr class="navbar-divider">
-                                                                    
-                                                                    <a class="navbar-item">
-                                                                    <a href="utilitarios">
-                                                                    XXXX
-                                                                    </a><hr class="navbar-divider">
-                                                                        
-                                                                    <a class="navbar-item">
-                                                                    <a href="utilitarios">
-                                                                    XXXX
-                                                                    </a>                                                                                            
-                                                                    </div>
-                                                                    </div>
-                                                                        
+                                                                
                                                                             <div class="navbar-item has-dropdown is-hoverable">
                                                                             <a class="navbar-link">
                                                                             XXXX
@@ -119,8 +112,6 @@ XXXX
 </a>                                                                                                                            
 </div>
 </div>
-
 </nav>
-
 <main class="container">
     
