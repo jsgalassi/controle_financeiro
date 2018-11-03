@@ -1,4 +1,4 @@
-﻿<?php include_once '../conex/conexao.php';
+﻿<?php include_once 'conex/conexao.php';
 
 try 
 {

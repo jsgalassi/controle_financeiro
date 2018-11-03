@@ -47,11 +47,11 @@ a
                             </a>
                                 
                             <div class="navbar-dropdown">                                
-                            <a href="bancos">
+                            <a href="listar_bancos.php">
                             Cad.Banco
                             </a><hr class="navbar-divider">
                                                                                             
-                            <a href="bancos">
+                            <a href="relatorio_bancos.php">
                             Rel.Bancos
                             </a></div></div>
                     

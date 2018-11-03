@@ -3,10 +3,10 @@
 <?php include_once 'conex/conexao.php';?>
 
 <br>
-<h4 class="title is-4">Cad. Clientes</h4>
+<h4 class="title is-4">Cad. Bancos</h4>
 <hr>
 <div class="container">
-    <a href="form_clientes.php" class="button is-primary">Incluir</a>
+    <a href="form_bancos.php" class="button is-primary">Incluir</a>
 </div>
 <br>
 <div class="container">
@@ -15,24 +15,26 @@
 <thead>
 <tr>
 	<th>COD</th>
-	<th>NOME</th>	
-	<th>CPF</th>	
+    <th>NRO BANCO</th>
+	<th>RAZAO SOCIAL</th>
+	<th>NOME FANTASIA</th>	
    	<th>AÇÕES</th>
     </tr>
 </thead>
 
 <tbody>
 <?php
-$rows = $PDO->query("SELECT * FROM CLIENTE");
+$rows = $PDO->query("SELECT * FROM banco");
 while ($row = $rows->fetch (PDO::FETCH_ASSOC))
 {
 echo 
 "<tr>
-	<td><h5>$row[codcliente]</h5></td>
-	<td><h5>$row[nomecliente]</h5></td>
-	<td><h5>$row[cpf]</h5></td>			
-    <td><h5><a href='form_clientes_edit.php?codcliente=$row[codcliente]'>Editar</a> - 
-			<a href='delete_clientes.php?codcliente=$row[codcliente]'>Excluir</a></h5></td>
+	<td><h5>$row[codbanco]</h5></td>
+	<td><h5>$row[nrobanco]</h5></td>
+    <td><h5>$row[razaosocial]</h5></td>
+	<td><h5>$row[nomefantasia]</h5></td>			
+    <td><h5><a href='form_bancos_edit.php?codbanco=$row[codbanco]'>Editar</a> - 
+			<a href='delete_bancos.php?codbanco=$row[codbanco]'>Excluir</a></h5></td>
 			</tr>";
 }
 ?>

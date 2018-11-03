@@ -1,22 +1,26 @@
-﻿<?php include_once '../conex/conexao.php';
+﻿<?php include_once 'conex/conexao.php';
 
 try 
 {
-	$codcliente = strtoupper($_POST['codcliente']);
-	$nomecliente = strtoupper($_POST['nomecliente']);
-	$cpf = strtoupper($_POST['cpf']);
+	$codbanco = strtoupper($_POST['codbanco']);
+	$nrobanco = strtoupper($_POST['nrobanco']);
+	$razaosocial = strtoupper($_POST['razaosocial']);
+	$nomefantasia = strtoupper($_POST['nomefantasia']);
 
-	$sql = $PDO->prepare("UPDATE cliente SET 
-		nomecliente = :nomecliente, 
-		cpf = :cpf		
+	$sql = $PDO->prepare("UPDATE banco SET 
+		codbanco = :codbanco, 
+		nrobanco = :nrobanco,
+        razaosocial = :razaosocial,
+        nomefantasia = :nomefantasia
 		WHERE 
-		codcliente = :codcliente");
-			$sql->bindParam(':codcliente', $codcliente);
-			$sql->bindParam(':nomecliente', $nomecliente);
-			$sql->bindParam(':cpf', $cpf);			                        
+		codbanco = :codbanco");
+			$sql->bindParam(':codbanco', $codbanco);
+			$sql->bindParam(':nrobanco', $nrobanco);
+			$sql->bindParam(':razaosocial', $razaosocial);
+            $sql->bindParam(':nomefantasia', $nomefantasia);			                        
 			$sql->execute();
 
-	header("location: listar_clientes.php");
+	header("location: listar_bancos.php");
 }
 catch
 (PDOException $e)

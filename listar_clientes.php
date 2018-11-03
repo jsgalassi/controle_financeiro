@@ -31,7 +31,7 @@ echo
 	<td><h5>$row[codcliente]</h5></td>
 	<td><h5>$row[nomecliente]</h5></td>
 	<td><h5>$row[cpf]</h5></td>			
-    <td><h5><a href='form_clientes_edit.php?codcliente=$row[codcliente]'>Editar</a> - 
+    <td><h5><a href='form_clientes_edit.php?codcliente=$row[codcliente]'>Editar</a></a> - 
 			<a href='delete_clientes.php?codcliente=$row[codcliente]'>Excluir</a></h5></td>
 			</tr>";
 }

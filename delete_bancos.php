@@ -2,17 +2,17 @@
 
 try 
 {
-	$codcliente = isset($_GET['codcliente']) ? $_GET['codcliente'] : null;
-	if (empty($codcliente)) {
-		echo "Cliente não encontrado";
+	$codbanco = isset($_GET['codbanco']) ? $_GET['codbanco'] : null;
+	if (empty($codbanco)) {
+		echo "Banco não encontrado";
 		exit;
 	}
-	$sql = $PDO->prepare("DELETE FROM CLIENTE
+	$sql = $PDO->prepare("DELETE FROM BANCO
 			WHERE 
-			codcliente = :codcliente");
-			$sql->bindParam(':codcliente', $codcliente);		
+			codbanco = :codbanco");
+			$sql->bindParam(':codbanco', $codbanco);		
 			$sql->execute();
-	header("location: listar_clientes.php");
+	header("location: listar_bancos.php");
 }
 catch
 (PDOException $e)

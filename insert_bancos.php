@@ -3,23 +3,27 @@
 <?php include_once 'conex/conexao.php';?>
 
 <?php
-$nomecliente = strtoupper($_POST['nomecliente']);
-$cpf = strtoupper($_POST['cpf']);
+$nrobanco = strtoupper($_POST['nrobanco']);
+$razaosocial = strtoupper($_POST['razaosocial']);
+$nomefantasia = strtoupper($_POST['nomefantasia']);
 
-$sql = "insert into cliente
+$sql = "insert into BANCO
 (
-nomecliente,
-cpf
+nrobanco,
+razaosocial,
+nomefantasia
 
 ) 
 values 
 (
-'$nomecliente',
-'$cpf'
+'$nrobanco',
+'$razaosocial',
+'$nomefantasia'
 )";
 $stmt = $PDO->prepare ($sql);
-$stmt->bindParam( 'nomecliente', $nomecliente);
-$stmt->bindParam( 'cpf', $cpf);
+$stmt->bindParam( 'nrobanco', $nrobanco);
+$stmt->bindParam( 'razaosocial', $razaosocial);
+$stmt->bindParam( 'nomefantasia', $nomefantasia);
 $result = $stmt->execute();
  
 if ( ! $result )
@@ -29,6 +33,6 @@ if ( ! $result )
 } 
 ?>
 <script language="JavaScript"> 
-window.location="listar_clientes.php"; 
+window.location="listar_bancos.php"; 
 </script> 
 <?php include_once 'inc/footer.php'; ?>
